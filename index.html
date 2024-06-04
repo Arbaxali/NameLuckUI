@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyramid Structure Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pyramid Structure Generator</h1>
+        <form id="inputForm" class="form-section">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+                <label for="datetime">Date of Birth (DD-MM-YYYY):</label>
+                <input type="text" id="datetime" name="datetime" placeholder="DD-MM-YYYY" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="loading" class="spinner" style="display: none;"></div>
+        <div id="result" style="display: none;" class="form-section">
+            <h2>Result</h2>
+            <p id="input"></p>
+            <p id="Datetime"></p>
+            <p id="dobSum">Total sum of date of birth is: </p>
+            <p id="nameSum">Total sum of name is: </p>
+            <div id="buttons"></div>
+            <div id="pyramid"></div>
+            <div id = "finalResult"></div>
+            <button id="backButton">Back</button>
+        </div>
+    </div>
+    <footer>
+        &copy; Arbaz Ali - Hosted on Microsoft Azure 
+        <a href="https://www.instagram.com/a_for_arbaz_" target="_blank"><i class="fab fa-instagram"></i></a>
+        <!-- <a href="https://www.linkedin.com/in/your_username" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/your_username" target="_blank"><i class="fab fa-github"></i></a> -->
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
