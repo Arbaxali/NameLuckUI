@@ -19,8 +19,15 @@ document.getElementById('inputForm').addEventListener('submit', async function(e
 
     const payload = { name, datetime };
 
+   // try {
+     //   const response = await fetch('https://nameluckweb.azurewebsites.net/Main', {
+       //     method: 'POST',
+         //   headers: { 'Content-Type': 'application/json' },
+           // body: JSON.stringify(payload)
+        //});
+
     try {
-        const response = await fetch('https://nameluckweb.azurewebsites.net/Main', {
+        const response = await fetch('http://35.208.10.119:7000/WeatherForecast/InsertNameAndDob', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload)
